@@ -1,0 +1,197 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	{% block extrahead %}
+	{% endblock %}
+
+	<link rel="stylesheet" href="{% static 'css/estilos.css ' %}">
+	<meta charset="utf-8">
+	<title>{% block title %}Document{% endblock %}</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.1/jquery.fancybox.min.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.1/jquery.fancybox.min.js"></script>
+	<script src="src/skdslider.min.js"></script>
+	<link href="src/skdslider.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container-fluid">
+		<div class="grid">
+			<div id="encabezado" class="row"> 
+				<div class="col-lg-4 col-xs-12">
+					<a href="#"><img id="misperris" src="img/logo.png" alt="" /></a>
+				</div>
+				<ul >
+				   <li class="menu"><a href="#">inicio</a></li>
+				   <li class="menu"><a href="#">servicios</a></li>
+				   <li class="menu"><a href="#">contáctenos</a></li>
+				   <li class="menu"><a href="formulario.html">registrarse</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row"> 
+			<div id="demo1">
+				<div class="slide">
+						<img src="adoptados/Apolo.jpg" alt=""/>
+					<div class="slide-desc">
+						<h2>APOLO</h2>
+						<p>"Nos cambio la vida, no solo es una mascota ,se ha convertido en parte de nuestra familia" . <a class="more" href="#">more</a>
+						</p>
+					</div>
+				</div>
+				<div class="slide">
+						<img src="adoptados/Duque.jpg" alt=""/>
+					<div class="slide-desc">
+						<h2>DUQUE</h2>
+						<p>"Me acompaña a todas partes , es mi mas fiel compañero". <a class="more" href="#">more</a></p>
+					</div>
+				</div>
+				<div class="slide">
+						<img src="adoptados/Tom.jpg" alt=""/>
+					<div class="slide-desc">
+						<h2>TOM</h2>
+						<p>"Todos los dias recibe a los niños en la puerta moviendo su colita, llena de alegria nuestro hogar ". <a class="more" href="#">more</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="pies" class="row">
+			<div class="col-lg-4">
+				<p id="numero">+56 9 98765431</p>
+			</div>
+			<div class="col-lg-4">
+				<p id ="info">Rescate y adopción de perros callejeros </p>
+				<br>
+				<br>
+			</div>
+			<div class="col-lg-4">
+				<a href="#"><img src="img/f.svg" class="logo" alt=""> </a><a href="#"><img src="img/g.svg" class="logo" alt=""> </a><a href="#"><img src="img/i.svg" class="logo" alt=""> </a><a href="#"><img src="img/t.svg" class="logo" alt=""></a>
+			</div>
+		</div>
+		<div class="row">
+			<section>
+				<div id="divrescate" >
+					<h2 class="titulop"> <strong> Rescate </strong> </h2> 
+					<h4 class ="subtitulo"> ETAPA UNO <br> </h4><hr id="rescate"/>
+					<br>
+					<br>
+					<p id="texto">Rescatamos perros en situación de peligro y/o abandono.Los rehabilitamos y los
+					 preparamos para buscarles hogar. </p>
+					<img id="img2" src="img/rescate.jpg " alt="" />
+				</div>
+			</section>
+		</div>
+		<div class="row">
+			<section >
+				<div id="divcrow">
+					<br>
+					<img id="img3" src="img/crowfunding.jpg" alt="" />
+					<h2 class="titulop"> <strong> Crowfunding </strong></h2>
+					<h4 class ="subtitulo">FINANCIAMIENTO <br></h4><hr id="campañas"/>
+					<br>
+					<br>
+				<p>Siga nuestras redes sociales para informarte acerca de las diversas campañas y 
+				  actividades que realizamos para obtener financiamiento para seguir ayudando.</p>
+					<form action="#">
+					   <input type="submit" value="Campañas" />
+					</form>
+				</div>
+			</section>
+		</div>
+		</div>
+		<div id="galeria" class="row"> 
+			<h1> Mis Perris-Buscan Hogar </h1>
+			<ul id="imagenes">
+				<li class="galeria-img">
+					<a data-fancybox="gallery" href="perritos/Oso.jpg">
+						<img  src="perritos/Oso_tn.jpg" class="galery-img" alt="" >
+					</a>
+				</li>
+				<li>
+					<br>
+					2 años y 7 kilos, fue encontrado en la comuna de lo prado<br>
+					esta desinfecta y desparacitado, listo para encontrar un nuevo hogar
+				</li>
+				<li class="galeria-img">
+					<a data-fancybox="gallery" href="perritos/Chocolate.jpg">
+						<img src="perritos/Chocolate_tn.jpg"  class="galery-img"  alt="">
+					</a>
+				</li>
+				<li>
+					<br>
+					2 años y 7 kilos, fue encontrado en la comuna de lo prado<br>
+					esta desinfecta y desparacitado, listo para encontrar un nuevo hogar
+				</li>
+				<li class="galeria-img">
+					<a data-fancybox="gallery" href="perritos/Bigotes.jpg">
+						<img src="perritos/Bigotes_tn.jpg" class="galery-img" alt="">
+					</a>
+				</li>
+				<li>
+					<br>
+					2 años y 7 kilos, fue encontrado en la comuna de lo prado<br>
+					esta desinfecta y desparacitado, listo para encontrar un nuevo hogar
+				</li>
+				<li class="galeria-img">
+					<a data-fancybox="gallery" href="perritos/Maya.jpg">
+						<img src="perritos/Maya_tn.jpg" class="galery-img" alt="">
+					</a>
+				</li>
+				<li>
+					<br>
+					2 años y 7 kilos, fue encontrado en la comuna de lo prado<br>
+					esta desinfecta y desparacitado, listo para encontrar un nuevo hogar
+				</li>
+				<li class="galeria-img">
+					<a data-fancybox="gallery" href="perritos/Pexel.jpg">
+						<img src="perritos/Pexel_tn.jpg" class="galery-img" alt="">
+					</a>
+				</li>
+				<li>
+					<br>
+					2 años y 7 kilos, fue encontrado en la comuna de lo prado<br>
+					esta desinfecta y desparacitado, listo para encontrar un nuevo hogar
+				</li>
+				<li class="galeria-img">
+					<a data-fancybox="gallery" href="perritos/Luna.jpg">
+						<img src="perritos/Luna_tn.jpg" class="galery-img" alt="">
+					</a>
+				</li>
+				<li>
+					<br>
+					2 años y 7 kilos, fue encontrado en la comuna de lo prado<br>
+					esta desinfecta y desparacitado, listo para encontrar un nuevo hogar
+				</li>
+				<li class="galeria-img">
+					<a data-fancybox="gallery" href="perritos/Wifi.jpg">
+						<img src="perritos/Wifi_tn.jpg" class="galery-img" alt="">
+					</a>
+				</li>
+				<li>
+					<br>
+					2 años y 7 kilos, fue encontrado en la comuna de lo prado<br>
+					esta desinfecta y desparacitado, listo para encontrar un nuevo hogar
+				</li>
+			</ul>
+		</div>
+		 <br>
+		 <br>
+
+	{% block content %}
+	<h4> Bloque de contenido</h4>
+	{% endblock %}
+
+	{% block footer %}
+	{% endblock %}
+</div>
+	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="{% static 'js/main.min.js' %}"></script>
+
+	{% block extrajs %}
+	{% endblock %}
+
+
+</body>
+</html>
